@@ -14,31 +14,37 @@
     flex-direction: column;
   }
   
-  .contact label {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .contact input,
-  .contact textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    border-radius: 5px;
+  .contact-form input,
+  .contact-form textarea {
     width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
   }
   
-  .contact button {
+  .contact-form textarea {
+    resize: none;
+    height: 150px;
+  }
+  
+  .send-button {
     padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
     background-color: #8B687F;
-    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
   }
   
-  .contact button:hover {
+  .send-button:hover {
     background-color: #00f2fe;
   }
   
