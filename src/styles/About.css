@@ -16,7 +16,7 @@
   .accordion {
     margin-top: 10px;
     max-width: 600px;
-    margin: 0 auto; /* Center the accordion */
+    margin: 0 auto; 
   }
   
   .accordion-item {
