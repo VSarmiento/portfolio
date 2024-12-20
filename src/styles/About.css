@@ -1,0 +1,30 @@
+.about {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .about a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #4facfe;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .about a:hover {
+    background-color: #00f2fe;
+  }
+  
