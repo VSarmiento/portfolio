@@ -2,19 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 
-function Navbar() {
+const Navbar = ({ isOpen, toggleSidebar }) => {
   return (
-    <nav className="navbar">
-      <h1>Vahl Sarmiento's Portfolio</h1>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/skills">Skills</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </nav>
+    <>
+      <button className="toggle-btn" onClick={toggleSidebar}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </button>
+
+      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+        <div className="sidebar-content">
+          <nav className="nav-links">
+            <Link to="/" className="nav-button">Home</Link>
+            <Link to="/about" className="nav-button">About</Link>
+            <Link to="/projects" className="nav-button">Projects</Link>
+            <Link to="/contact" className="contact-button">Contact</Link>
+          </nav>
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default Navbar;

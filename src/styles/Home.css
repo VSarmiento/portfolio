@@ -1,15 +1,30 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #4facfe, #00f2fe);
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  width: 100%; 
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0; 
+  animation: fadeInFromTop 1s ease-out forwards; 
+}
+
+.home-box {
+  background: linear-gradient(to bottom, #4facfe, #00f2fe); 
+  color: #ffffff;
+  padding: 40px; 
+  border-radius: 50px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  text-align: center;
+  width: 80%; 
+  max-width: 1000px;
+  height: auto;
+}
+
   .home h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -23,4 +38,75 @@
     max-width: 600px;
     margin: 0 auto;
   }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    margin-bottom: 20px; 
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 4px solid #ffffff; 
+  }
   
+  .skills-section {
+    margin-top: 40px; 
+    text-align: center;
+  }
+  
+  .skills-section h3 {
+    font-size: 2rem; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff; 
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+    padding: 0;
+    list-style-type: none; 
+  }
+  
+  .skills-list li {
+    background-color: #8B687F;
+    color: #fff;
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .skills-list li:hover {
+    transform: translateY(-5px); 
+    background-color: #555;
+  }
+
+  .home a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #8B687F;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .home a:hover {
+    background-color: #00f2fe;
+  }
+
+  @keyframes fadeInFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End in place */
+    }
+  }
