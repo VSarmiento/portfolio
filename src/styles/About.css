@@ -13,3 +13,41 @@
     line-height: 1.8;
   }
   
+  .accordion {
+    margin-top: 10px;
+    max-width: 600px;
+    margin: 0 auto; /* Center the accordion */
+  }
+  
+  .accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    padding: 15px;
+    background-color: #4facfe;
+    color: white;
+    text-align: left;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: #00f2fe;
+  }
+  
+  .accordion-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+  }

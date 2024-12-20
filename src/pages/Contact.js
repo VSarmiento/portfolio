@@ -18,10 +18,6 @@ function Contact() {
           <textarea placeholder="Your Message"></textarea>
           <button type="submit">Send</button>
         </form>
-        <div>
-          <h3>Follow Me</h3>
-          <p>GitHub | LinkedIn</p>
-       </div>
      </div>
     </PageLayout>
   );

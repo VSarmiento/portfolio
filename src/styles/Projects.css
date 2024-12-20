@@ -1,7 +1,7 @@
 .projects {
     padding: 40px 20px;
     color: #ffffff;
-  }rgb(255, 255, 255)
+  }
   
   .projects h2 {
     font-size: 2rem;
@@ -19,5 +19,19 @@
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .projects a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #8B687F;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .projects a:hover {
+    background-color: #00f2fe;
   }
   
